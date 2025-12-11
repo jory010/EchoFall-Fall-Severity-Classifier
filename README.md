@@ -1,66 +1,92 @@
-# EchoFall-Fall-Severity-Classifier
-AI-enabled acoustic monitoring system for detecting fall events and classifying their severity (High, Low, No-Fall). The project uses the SAFE dataset, audio preprocessing, spectrograms, ConvNeXt-Tiny, and Audio Spectrogram Transformer (AST) to support privacy-preserving emergency detection.
+EchoFall – Fall Severity Classifier
 
-Privacy-preserving acoustic fall detection and severity classification using deep learning.
+A privacy-preserving acoustic monitoring system for detecting fall events and classifying their severity into High, Low, or No-Fall.
+The project uses the SAFE dataset, audio preprocessing pipelines, spectrogram representations, and two deep-learning models: ConvNeXt-Tiny (baseline) and Audio Spectrogram Transformer (AST) (prototype).
 
-🚀 Project Overview
+🚀 Overview
 
-EchoFall-Fall-Severity-Classifier AI is monitoring system designed to detect fall events and classify their severity into three categories:
+EchoFall is designed to analyze short audio clips and determine whether a fall has occurred, followed by estimating its severity.
+The goal is to provide an AI-powered safety tool that works without cameras and protects user privacy.
 
-High-Risk Fall
+The project consists of three main components:
 
-Low-Risk Fall
+Baseline Model: ConvNeXt-Tiny 
 
-No Fall
+Prototype Model: AST 
 
-The system uses advanced audio processing and deep learning models (ConvNeXt-Tiny & AST) to infer severity from short sound clips while preserving user privacy.
+Interactive UI Prototype: Upload, record, and analyze fall-sound samples
 
 🎧 Features
 
-Spectrogram audio representations
+Audio preprocessing and spectrogram generation
 
-Automatic severity labeling using clustering (K-Means)
+Automatic severity labeling through K-Means clustering
 
-Context-aware models using metadata (surface type, body position)
+Context-aware severity inference using metadata
 
-ConvNeXt-Tiny baseline
+ConvNeXt-Tiny baseline model
 
-Audio Spectrogram Transformer (AST) for best performance
+AST model for improved performance
 
-Prototype UI for uploading and analyzing audio
+Lightweight prototype UI demo
 
-📦 Installation
-pip install -r requirements.txt
+📂 Repository Structure
+baseline_model/
+   └── convnext_tiny_kmeans.ipynb      # Baseline model notebook
 
-## ▶️ Running the Models
+prototype_model/
+   └── ast_kmeans_pipeline.ipynb       # Prototype AST model
 
-Open the baseline or prototype notebook:
+experiments/
+   └── notebooks/                      # Additional model trials (future)
 
-```
-baseline_model/convnext-tiny-kmeans.ipynb
-prototype_model/ast_+_kmeans.ipynb
-```
+prototype_ui/
+   └── ui_demo_images/                 # Screenshots for the demo UI
 
-📊 Prototype 
-Prototype link: https://echofall-ai-demo.lovable.app/
-Images in /prototype demonstrate:
+▶️ Running the Models
 
-Upload audio
+Open the notebooks directly through Colab or Jupyter or Kaggle:
 
-Recording state
+baseline_model/convnext_tiny_kmeans.ipynb
+prototype_model/ast_kmeans_pipeline.ipynb
 
-Analysis in progress
 
-Final severity prediction
+Each notebook includes:
+
+Preprocessing steps
+
+Spectrogram generation
+
+Model training
+
+Evaluation metrics
+
+🖥️ Prototype Demo
+
+UI demo link:
+https://echofall-ai-demo.lovable.app/
+
+The prototype interface supports:
+
+Uploading audio samples
+
+Recording from the browser
+
+Running fall-severity analysis
+
+Displaying the final prediction
+
+Screenshots are included under:
+prototype_ui/
 
 📚 Dataset
 
-SAFE Dataset for fall audio events:
+SAFE: Fall audio dataset
 https://www.kaggle.com/datasets/antonygarciag/fall-audio-detection-dataset
 
 📝 License
 
-MIT License.
+MIT License
 
 👥 Authors
 
