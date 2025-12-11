@@ -1,5 +1,5 @@
 # EchoFall-Fall-Severity-Classifier
-AI-enabled acoustic monitoring system for detecting fall events and classifying their severity (High, Low, No-Fall). The project uses the SAFE dataset, audio preprocessing, STFT spectrograms, ConvNeXt-Tiny, and Audio Spectrogram Transformer (AST) to support privacy-preserving emergency detection.
+AI-enabled acoustic monitoring system for detecting fall events and classifying their severity (High, Low, No-Fall). The project uses the SAFE dataset, audio preprocessing, spectrograms, ConvNeXt-Tiny, and Audio Spectrogram Transformer (AST) to support privacy-preserving emergency detection.
 
 Privacy-preserving acoustic fall detection and severity classification using deep learning.
 
@@ -17,7 +17,7 @@ The system uses advanced audio processing and deep learning models (ConvNeXt-Tin
 
 🎧 Features
 
-STFT Spectrogram audio representations
+Spectrogram audio representations
 
 Automatic severity labeling using clustering (K-Means)
 
@@ -32,8 +32,14 @@ Prototype UI for uploading and analyzing audio
 📦 Installation
 pip install -r requirements.txt
 
-▶️ Run Inference
-python src/inference.py --audio sample.wav
+## ▶️ Running the Models
+
+Open the baseline or prototype notebook:
+
+```
+baseline_model/convnext-tiny-kmeans.ipynb
+prototype_model/ast_+_kmeans.ipynb
+```
 
 📊 Prototype Screens
 
