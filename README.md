@@ -1,11 +1,11 @@
-# Acoustic-Fall-Severity-Classifier
+# EchoFall-Fall-Severity-Classifier
 AI-enabled acoustic monitoring system for detecting fall events and classifying their severity (High, Low, No-Fall). The project uses the SAFE dataset, audio preprocessing, STFT spectrograms, ConvNeXt-Tiny, and Audio Spectrogram Transformer (AST) to support privacy-preserving emergency detection.
 
 Privacy-preserving acoustic fall detection and severity classification using deep learning.
 
 🚀 Project Overview
 
-Acoustic-Fall-Severity-Classifier AI is monitoring system designed to detect fall events and classify their severity into three categories:
+EchoFall-Fall-Severity-Classifier AI is monitoring system designed to detect fall events and classify their severity into three categories:
 
 High-Risk Fall
 
