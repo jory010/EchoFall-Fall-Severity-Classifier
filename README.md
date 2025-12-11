@@ -41,8 +41,8 @@ baseline_model/convnext-tiny-kmeans.ipynb
 prototype_model/ast_+_kmeans.ipynb
 ```
 
-📊 Prototype Screens
-
+📊 Prototype 
+Prototype link: https://echofall-ai-demo.lovable.app/
 Images in /prototype demonstrate:
 
 Upload audio
